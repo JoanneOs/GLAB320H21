@@ -18,7 +18,11 @@ function Header() {
     //   <h1>Simple React Application</h1>
     // </header>
 
-    <h1>Simple React Application</h1>
+   // <h1>Simple React Application</h1>
+
+   //want to center it
+   <h1 style={{ textAlign: "center" }}>simple react application</h1>
+
   );
 }
 
@@ -32,7 +36,7 @@ function Content(props) {
   //   <p>This is my first React Application, wish me luck!</p>
   // );
 
-  return (<p style={{ color: props.color }}>{props.text}</p>);
+  return (<p style={{ color: props.color , textAlign: "center"}}>{props.text}</p>);
 
 }
 
@@ -41,7 +45,7 @@ function Footer() {
     // <footer>
     //   <h1>Created by Me, of course.</h1>
     // </footer>
-    <h1>Created by Me, of course.</h1>
+    <h1>Created by Joanne, of course.</h1>
   );
 }
 
