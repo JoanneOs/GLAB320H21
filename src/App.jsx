@@ -1,5 +1,16 @@
 import React from "react";
 
+//Inline styling
+
+const divStyle = {
+  margin: '40px',
+  border: '5px solid pink'
+};
+const pStyle = {
+  fontSize: '15px',
+  textAlign: 'center'
+};
+
 // this is the header component
 function Header() {
   return (
@@ -34,10 +45,14 @@ function Footer() {
   );
 }
 
-function App() {
+function App() { //add Inline styling
   return (
     <>
    <Header />
+
+   <div style={divStyle}>
+    <p style={pStyle}>Get started with inline style</p>
+  </div>
    <Content color="blue" text="this is my first react application!" />
    <Content color="red" text="Wish me luck..." />
    <Content color="green" text="I think I've got it!" />
